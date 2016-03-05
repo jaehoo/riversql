@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Implementation-Title: JavaProxyEAR
+Implementation-Version: 2014.07.17.20.34.30
+Implementation-Vendor-Id: sap.com
+Specification-Vendor: SAP AG
+

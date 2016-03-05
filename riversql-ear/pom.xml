@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>org.oz</groupId>
+    <artifactId>riversql4pi</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.oz</groupId>
+    <artifactId>riversql-ear</artifactId>
+    <packaging>ear</packaging>
+    <name>riversql-ear</name>
+    <version>1.0-SNAPSHOT</version>
+
+    <description />
+    <dependencies>
+        <dependency>
+            <groupId>org.oz</groupId>
+            <artifactId>riversql-ejb</artifactId>
+            <type>ejb</type>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.oz</groupId>
+            <artifactId>riversql-webapp</artifactId>
+            <type>war</type>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>codehaus snapshot repository</id>
+            <url>http://snapshots.repository.codehaus.org/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <build>
+        <!-- <finalName>your-ear-name</finalName>-->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>2.10.1</version>
+                <configuration>
+                    <earSourceDirectory>src/main/resources</earSourceDirectory>
+                    <workDirectory>${project.build.directory}/${project.build.finalName}</workDirectory>
+                    <modules>
+                        <ejbModule>
+                            <groupId>org.oz</groupId>
+                            <artifactId>riversql-ejb</artifactId>
+                        </ejbModule>
+                        <webModule>
+                            <groupId>org.oz</groupId>
+                            <artifactId>riversql-webapp</artifactId>
+                        </webModule>
+                    </modules>
+                    <!--<jboss>
+                        <version>6</version>
+                        &lt;!&ndash; <loader-repository>com.oz:archive=your-ear-name.ear</loader-repository>&ndash;&gt;
+                    </jboss>-->
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <version>1.2.2</version>
+                <configuration>
+                    <container>
+                        <containerId>jboss4x</containerId>
+                        <type>remote</type>
+                    </container>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

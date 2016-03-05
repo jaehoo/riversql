@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Ext-SDM-SDA-Comp-Version: 1
+softwaretype: J2EE
+JarSAP-Standalone-Version: 20090803.1000
+JarSAPProcessing-Version: 20090907.1000
+deployfile: sda-dd.xml
+archivetype: DC
+JarSAP-Version: 20090803.1000
+keyname: JavaProxyEAR
+keyvendor: sap.com
+keylocation: localhost
+keycounter: 2014.07.17.20.34.30
+componentelement: <componentelement  name="JavaProxyEAR" vendor="sap.com" componenttype=
+ "DC" subsystem="NO_SUBSYS" location="localhost" counter="2014.07.17.20
+ .34.30" deltaversion="F" updateversion="LB-20140717203430" componentpr
+ ovider="SAP AG" archivetype="DC"/> 
+JarSL-Version: 20100616.1800
+compress: true
+
