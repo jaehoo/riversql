@@ -165,7 +165,11 @@
 <script type="text/javascript">var sqlResultPluginFactories=[];</script>
 <script type="text/javascript">document.getElementById('loading-msg').innerHTML = 'Building UI...';</script>
 <script type="text/javascript" src="XMLSerializer.js"></script>
-<script type="text/javascript" src="build/riversql_all-min.js"></script>
+<script type="text/javascript" src="riversql.js"></script>
+<script type="text/javascript" src="grid_to_excel.js"></script>
+<script type="text/javascript" src="dbgraphics.js"></script>
+<script type="text/javascript" src="gridFactories.js"></script>
+<script type="text/javascript" src="mysql.js"></script>
 
 <script type="text/javascript" src="FileUploadField.js"></script>
 

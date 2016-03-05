@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a simple web application DB manager client, I get this from [riversql](https://code.google.com/p/riversql/source/checkout) based on [squirrel](http://squirrel-sql.sourceforge.net/), but I prepared to deploy on SAP PI to test and exceute querys from Netwaver Application Server.
+This project is a simple web application DB manager client, I get this from [riversql](http://riversql.googlecode.com/svn/trunk/) based on [squirrel](http://squirrel-sql.sourceforge.net/), but I prepared to deploy on SAP PI to test and exceute querys from Netwaver Application Server.
 
 ## Screenshot
 

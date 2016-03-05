@@ -6149,7 +6149,3 @@ function load_plugin_script(url_script){
 function exportTable(node){
 	createExportTablePage(node);
 }
-
-function comingSoon(){
-	alert("  RiverSQL is a famous database administration tool. \nwe want to build this db client to replace phpmyadmin, \nand support more databases, not only mysql, \nfor example:\n sql server,oracle,db2,firebird,sybase and Postgres. \n\n  Current version is our first rlease,we will release \nmore function soon.");
-}
